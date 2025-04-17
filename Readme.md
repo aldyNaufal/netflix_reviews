@@ -1,21 +1,14 @@
-Tentu, berikut adalah contoh README.md yang rapi dan informatif untuk project kamu:
-
----
-
-```markdown
 # Google Play Store Review Scraper: Netflix App
 
 Project ini merupakan proyek scraping dan analisis data review dari aplikasi **Netflix** yang tersedia di **Google Play Store**. Proses scraping dilakukan dengan menggunakan `scrapping.ipynb`, dan pengolahan data lebih lanjut dilakukan di `main.ipynb`.
 
 ## 📁 Struktur Proyek
 
-```
 .
 ├── scrapping.ipynb      # Notebook untuk scraping review dari Google Play Store
 ├── main.ipynb           # Notebook untuk preprocessing dan analisis data
 ├── requirements.txt     # File daftar library/dependensi yang dibutuhkan
 └── README.md            # Dokumentasi proyek
-```
 
 ## 🚀 Fitur Utama
 
