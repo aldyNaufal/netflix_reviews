@@ -1,0 +1,10 @@
+nltk
+pandas
+numpy
+matplotlib
+wordcloud
+scikit-learn
+xgboost
+tensorflow
+gensim
+pyspellchecker
