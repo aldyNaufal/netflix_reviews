@@ -4,12 +4,13 @@ Project ini merupakan proyek scraping dan analisis data review dari aplikasi **N
 
 ## 📁 Struktur Proyek
 
-.
+```.
 ├── data/netflix_reviews.csv      # Data Hasil Scrapping
 ├── scrapping.ipynb      # Notebook untuk scraping review dari Google Play Store
 ├── main.ipynb           # Notebook untuk preprocessing dan analisis data
 ├── requirements.txt     # File daftar library/dependensi yang dibutuhkan
 └── README.md            # Dokumentasi proyek
+```
 
 ## 🚀 Fitur Utama
 
@@ -49,8 +50,3 @@ Project ini merupakan proyek scraping dan analisis data review dari aplikasi **N
 - Library scraping seperti `google-play-scraper` (atau library lain sesuai di `requirements.txt`)
 - Pandas, NumPy, Matplotlib, dan library lainnya untuk analisis data
 
-## ⚠️ Catatan
-
-- Data yang di-scrape terbatas pada ketentuan dan batasan dari Google Play Store.
-- Pastikan koneksi internet stabil saat menjalankan proses scraping.
-- Notebook ini hanya ditujukan untuk keperluan edukasi dan riset.
