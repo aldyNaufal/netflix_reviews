@@ -1,18 +1,27 @@
 # Google Play Store Review Scraper & Sentiment Analysis: Netflix App
 
-## 1. Domain Proyek: Sentiment Analysis Ulasan Netflix
 
-Pada era digital saat ini, *user-generated reviews* di platform seperti Google Play Store menjadi sumber data utama dalam memahami pengalaman pengguna terhadap aplikasi mobile. Studi terbaru oleh Ama (2025) mengungkap bahwa lewat **sentiment analysis** dan pemodelan statistik terhadap 13.500 ulasan Netflix, ditemukan bahwa sekitar **61.9% ulasan bersifat positif**, dan skor sentimen terbukti menjadi prediktor kuat terhadap rating bintang pengguna ([Preprints][1], [Scilit][2]). Menariknya, hal ini mempertegas bahwa analisis sentimen dapat memberikan wawasan lebih dalam mengenai kepuasan pengguna, di luar sekedar angka rating.
+## 1. Domain Proyek: Sentiment Analysis Ulasan Aplikasi Netflix
 
-Selain itu, penelitian yang membandingkan ulasan aplikasi (termasuk Netflix) menunjukkan bahwa masalah pada *algorithmic decision-making* seringkali terungkap lewat sentimen negatif yang diungkapkan pengguna di ulasan, yang berdampak pada desain antarmuka dan interaksi sistem ([arXiv][3]). Sementara itu, tinjauan umum terhadap metode sentiment analysis di Google Play Store menekankan manfaat bagi pengembang aplikasi dalam memahami opini pengguna, termasuk preferensi fitur dan pengalaman pengguna secara real-time ([SpringerLink][4], [AppTweak][5]).
+Ulasan pengguna di platform seperti Google Play Store kini menjadi sumber data penting untuk memahami pengalaman pengguna terhadap aplikasi mobile (Samanmali & Rupasingha, 2024). Analisis sentimen terhadap review ini memungkinkan pengembang untuk mengidentifikasi kepuasan, keluhan, dan isyarat penting lainnya secara real-time.
 
-Dengan dasar tersebut, proyek ini bertujuan membangun model **analisis sentimen ulasan Netflix** berbahasa Inggris dari Google Play Store menggunakan pendekatan **lexicon-based** (misalnya VADER), dilanjutkan dengan **balancing data**, ekstraksi fitur (TF-IDF, BoW, Word2Vec), serta pelatihan **berbagai model klasifikasi** — mulai dari MLP hingga Random Forest — untuk menghasilkan klasifikasi saudara **positif, netral, negatif** dengan akurasi tinggi.
+Penelitian oleh Ama (2025) menunjukkan bahwa dari 13.500 ulasan Netflix yang ditelaah, sekitar **61,9 % bersifat positif**. Hasil analisis sentimen ini terbukti menjadi prediktor kuat terhadap rating bintang pengguna dan engagement seperti jumlah “thumbs-up” (Ama, 2025).
 
-Tujuan akhir dari proyek ini adalah menghasilkan model sentiment analysis yang **akurat dan seimbang**, yang dapat membantu tim produk dan customer service dalam:
+Dalam studi yang lebih umum, Samanmali dan Rupasingha (2024) menyampaikan bahwa teknik berbasis **deep learning** seperti LSTM menghasilkan akurasi antara **80–90 %** dalam klasifikasi sentimen, hal ini menunjukkan bahwa metode ini menghasilkan akurasi lebih tinggi dibanding metode klasik seperti SVM dan ANN.
 
-* Memahami persepsi pengguna secara kuantitatif dan kualitatif.
-* Menyoroti fitur atau permasalahan yang ramai dikomentari pengguna.
-* Mendukung pengambilan keputusan berbasis data untuk peningkatan aplikasi.
+Dengan dasar tersebut, proyek ini dirancang untuk membangun model **analisis sentimen ulasan aplikasi Netflix** berbahasa Inggris berdasarkan review dari Google Play Store. Pendekatan yang digunakan meliputi:
+
+* **Lexicon-based sentiment labeling** menggunakan VADER,
+* **Data balancing** melalui oversampling,
+* **Ekstraksi fitur** menggunakan TF-IDF, BoW, dan Word2Vec,
+* Pelatihan model klasifikasi seperti MLP, Random Forest, dan lainnya.
+
+Tujuan utama proyek ini adalah menciptakan model sentiment analysis yang **akurat dan seimbang**, guna membantu tim produk dan customer service dalam:
+
+* Mengevaluasi persepsi pengguna secara kuantitatif dan kualitatif,
+* Mengidentifikasi fitur atau isu yang sering dikomentari oleh pengguna,
+* Memberikan dasar pengambilan keputusan berbasis data untuk peningkatan aplikasi.
+
 
 
 
@@ -133,14 +142,6 @@ Model yang dilatih:
 
 ## 📖 **Referensi**
 
-* Ama, N. (2025). *A Combined Sentiment and Statistical Analysis for Netflix User Reviews*. Preprints.org. DOI: 10.20944/preprints202507.1906.v1 ([Preprints][1], [Scilit][2])
-* Eiband, M., Völkel, S. T., Buschek, D., Cook, S., & Hussmann, H. (2020). A method and analysis to elicit user-reported problems in intelligent everyday applications. *arXiv*. ([arXiv][3])
-* Samanmali, P. H. C., & Rupasingha, R. A. H. M. (2024). Sentiment analysis on Google Play Store app users’ reviews based on deep learning approach. *Multimedia Tools and Applications*, 83, 84425–84453. ([SpringerLink][4])
-* Shepherd, G. (2024, Desember 30). Understanding Sentiment Analysis in App Reviews. *AppTweak Blog*. ([AppTweak][5])
-
-[1]: https://www.preprints.org/manuscript/202507.1906/v1?utm_source=chatgpt.com "A Combined Sentiment and Statistical Analysis for Netflix User Reviews"
-[2]: https://www.scilit.com/publications/4724f890c3638c92ab42b58e18c149c6?utm_source=chatgpt.com "A Combined Sentiment and Statistical Analysis for Netflix User Reviews"
-[3]: https://arxiv.org/abs/2002.01288?utm_source=chatgpt.com "A Method and Analysis to Elicit User-reported Problems in Intelligent Everyday Applications"
-[4]: https://link.springer.com/article/10.1007/s11042-024-19185-w?utm_source=chatgpt.com "Sentiment analysis on google play store app users’ reviews based on ..."
-[5]: https://www.apptweak.com/en/aso-blog/use-app-review-sentiment-analysis-to-make-product-decisions?utm_source=chatgpt.com "Use App Review Sentiment Analysis to Make Product Decisions"
+* Ama, N. (2025). *A Combined Sentiment and Statistical Analysis for Netflix User Reviews*. Preprints.org. [https://doi.org/10.20944/preprints202507.1906.v1](https://doi.org/10.20944/preprints202507.1906.v1)
+* Samanmali, P. H. C., & Rupasingha, R. A. H. M. (2024). Sentiment analysis on Google Play Store app users’ reviews based on deep learning approach. *Multimedia Tools and Applications*, 83, 84425–84453. [https://doi.org/10.1007/s11042-024-19185-w](https://doi.org/10.1007/s11042-024-19185-w)
 
